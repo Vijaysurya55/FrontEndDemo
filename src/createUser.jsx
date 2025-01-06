@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
-const navigate=useNavigate
+const navigate=useNavigate();
 
 const CreateUser = () => {
   const [name,setName]=useState("");
