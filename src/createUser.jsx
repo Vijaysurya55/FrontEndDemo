@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
-const navigate=useNavigate();
 
 const CreateUser = () => {
   const [name,setName]=useState("");
   const[email,setEmail]=useState("");
   const [address,setAddress]=useState("");
+  const navigate=useNavigate();
   const submit=(e)=>{
     e.preventDefault();
     axios.post('https://backenddemomern-0d1a.onrender.com/api/user/create',{
