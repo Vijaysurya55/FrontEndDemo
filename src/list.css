@@ -1,0 +1,17 @@
+.custom-bullet-star li::before {
+    content: "*";
+    color: red;
+    margin-right: 10px;
+  }
+  
+  .custom-bullet-hash li::before {
+    content: "#";
+    color: blue;
+    margin-right: 10px;
+  }
+  
+  ul {
+    list-style: none; 
+    padding-left: 20px; 
+  }
+  
